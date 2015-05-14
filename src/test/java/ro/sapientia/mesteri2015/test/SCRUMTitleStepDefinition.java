@@ -38,6 +38,7 @@ public class SCRUMTitleStepDefinition {
 
 		// Write term in google textbox
 		WebElement titleTextBox = driver.findElement(By.id("story-title"));
+		titleTextBox.clear();
 		titleTextBox.sendKeys(additionTerms);
 
 		// Click on searchButton

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="ro.sapientia.mesteri2015.SCRUMTitleTest" time="1.062" errors="0" skipped="0">
+<testsuite tests="8" failures="2" name="ro.sapientia.mesteri2015.SCRUMSprintUpdateTest" time="0.484" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_45\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="E:\sapi\workspace\sapi_4\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7061606190718518214.tmp"/>
+    <property name="classworlds.conf" value="E:\sapi\workspace\sapi_4\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf740524003791113391.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_45/bin/server;C:/Program Files/Java/jre1.8.0_45/bin;C:/Program Files/Java/jre1.8.0_45/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files (x86)\Git\cmd;E:\app\apache-maven-3.2.5\bin;C:\Program Files (x86)\Skype\Phone\;E:\app\z3-4.3.2-x64-win;C:\Program Files (x86)\Mozilla Firefox;E:\sapi\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -63,10 +63,24 @@
   </properties>
   <testcase classname="Scenario: UpdateFirst" name="Given I edit the scrum list&apos;s first story" time="0"/>
   <testcase classname="Scenario: UpdateFirst" name="When I enter &quot;updatefirstnew&quot; in  the title textbox and I push the update button" time="0"/>
-  <testcase classname="Scenario: UpdateFirst" name="Then I should get result &quot;updatefirstnew&quot; in new stories list" time="0"/>
-  <testcase classname="Scenario: UpdateFirst" name="Scenario: UpdateFirst" time="0.625"/>
+  <testcase classname="Scenario: UpdateFirst" name="Then I should get result &quot;updatefirstnew&quot; in new stories list" time="0">
+    <failure message="expected:&lt;[asd]updatefirstnew&gt; but was:&lt;[]updatefirstnew&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[asd]updatefirstnew&gt; but was:&lt;[]updatefirstnew&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at ro.sapientia.mesteri2015.test.SCRUMSprintUpdateStepDefinition.I_should_get_result_in_new_stories_list(SCRUMSprintUpdateStepDefinition.java:57)
+	at ✽.Then I should get result &quot;updatefirstnew&quot; in new stories list(ro\sapientia\mesteri2015\SCRUMSprintUpdate.feature:7)
+</failure>
+  </testcase>
+  <testcase classname="Scenario: UpdateFirst" name="Scenario: UpdateFirst" time="0">
+    <failure message="expected:&lt;[asd]updatefirstnew&gt; but was:&lt;[]updatefirstnew&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[asd]updatefirstnew&gt; but was:&lt;[]updatefirstnew&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at ro.sapientia.mesteri2015.test.SCRUMSprintUpdateStepDefinition.I_should_get_result_in_new_stories_list(SCRUMSprintUpdateStepDefinition.java:57)
+	at ✽.Then I should get result &quot;updatefirstnew&quot; in new stories list(ro\sapientia\mesteri2015\SCRUMSprintUpdate.feature:7)
+</failure>
+  </testcase>
   <testcase classname="Scenario: Title1" name="Given I open the scrum tool add page" time="0"/>
   <testcase classname="Scenario: Title1" name="When I enter &quot;title1&quot; in  the title textbox and I push the add button" time="0"/>
   <testcase classname="Scenario: Title1" name="Then I should get result &quot;title1&quot; in stories list" time="0"/>
-  <testcase classname="Scenario: Title1" name="Scenario: Title1" time="0.437"/>
+  <testcase classname="Scenario: Title1" name="Scenario: Title1" time="0.484"/>
 </testsuite>
