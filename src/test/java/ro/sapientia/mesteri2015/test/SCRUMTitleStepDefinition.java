@@ -30,8 +30,8 @@ public class SCRUMTitleStepDefinition {
 		driver.get("http://localhost:8080/");
 	}
 
-	@When("^I enter \"([^\"]*)\" in  the title textbox and I push the add button$")
-	public void I_enter_in_the_title_textbox_and_I_push_the_add_button(
+	@When("^I enter \"([^\"]*)\" in  the title textbox and I push the add comment button$")
+	public void I_enter_in_the_title_textbox_and_I_push_the_add_comment_button(
 			String additionTerms) throws Throwable {
 		WebElement addButton = driver.findElement(By.id("add-button"));
 		addButton.click();
